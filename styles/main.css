@@ -1,49 +1,42 @@
-// American Name Finder (Chinese)
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #eee;
-  padding: 0 10%;
-}
+  padding: 0 10%; }
 
 header {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  .productName {
+  width: 100%; }
+  header .productName {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 100px;
-    background: lightyellow;
-    span {
+    background: lightyellow; }
+    header .productName span {
       font-size: 20px;
-      margin: 0 10%;
-    }
-  }
-  nav {
+      margin: 0 10%; }
+  header nav {
     display: flex;
     width: 100%;
     height: 8vw;
-    background: skyblue;
-  }
-}
+    background: skyblue; }
 
 ul {
   display: flex;
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  list-style: none;
-  li {
+  list-style: none; }
+  ul li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,12 +46,9 @@ ul {
     font-size: 2vw;
     border: 1px solid pink;
     border-radius: 50%;
-    transition: all .5s ease;
-    &:hover {
-      background-color: lightgreen;
-    }
-  }
-}
+    transition: all .5s ease; }
+    ul li:hover {
+      background-color: lightgreen; }
 
 .boyGirlPick {
   position: relative;
@@ -67,31 +57,26 @@ ul {
   align-items: center;
   width: 100%;
   height: 30vw;
-  background: white;
-  .bounce {
+  background: white; }
+  .boyGirlPick .bounce {
     position: absolute;
     opacity: 0.5;
     height: 100%;
     width: 70%;
     border-radius: 20%;
     align-self: baseline;
-    animation: bounce 5s infinite;
-    @keyframes bounce {
-      0% {
-        background: lightblue;
-        left: 0;
-      }
-      50% {
-        left: 30%;
-        background: pink;
-      }
-      100% {
-        left: 0;
-        background: lightblue;
-      }
-    }
-  }
-  .boy, .girl {
+    animation: bounce 5s infinite; }
+@keyframes bounce {
+  0% {
+    background: lightblue;
+    left: 0; }
+  50% {
+    left: 30%;
+    background: pink; }
+  100% {
+    left: 0;
+    background: lightblue; } }
+  .boyGirlPick .boy, .boyGirlPick .girl {
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -102,27 +87,22 @@ ul {
     font-size: 3vw;
     border-radius: 10%;
     box-shadow: 10px 10px 5px #888888;
-    transition: all .5s ease;
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
-  .boy {
-    background: lightblue;
-  }
-  .girl {
-    background: pink;
-  }
-}
+    transition: all .5s ease; }
+    .boyGirlPick .boy:hover, .boyGirlPick .girl:hover {
+      transform: scale(1.2); }
+  .boyGirlPick .boy {
+    background: lightblue; }
+  .boyGirlPick .girl {
+    background: pink; }
 
 .description {
   background: white;
   padding: 5%;
-  margin: 20px 0;
-  p {
+  margin: 20px 0; }
+  .description p {
     color: turquoise;
     line-height: 5vw;
     font-size: 4vw;
-    margin: 30px;
-  }
-}
+    margin: 30px; }
+
+/*# sourceMappingURL=main.css.map */
